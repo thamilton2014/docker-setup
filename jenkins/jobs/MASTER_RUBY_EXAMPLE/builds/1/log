@@ -1,0 +1,23 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building on master in workspace /var/jenkins_home/jobs/MASTER_RUBY_EXAMPLE/workspace
+Cloning the remote Git repository
+Cloning repository https://github.com/thamilton2014/ruby-example.git
+ > git init /var/jenkins_home/jobs/MASTER_RUBY_EXAMPLE/workspace # timeout=10
+Fetching upstream changes from https://github.com/thamilton2014/ruby-example.git
+ > git --version # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/thamilton2014/ruby-example.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/thamilton2014/ruby-example.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/thamilton2014/ruby-example.git # timeout=10
+Fetching upstream changes from https://github.com/thamilton2014/ruby-example.git
+ > git -c core.askpass=true fetch --tags --progress https://github.com/thamilton2014/ruby-example.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 380dc59022c80a4a4375a795dd02260f3a934d05 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 380dc59022c80a4a4375a795dd02260f3a934d05
+First time build. Skipping changelog.
+[workspace] $ /bin/bash --login /tmp/hudson1602201559031044079.sh
+/tmp/hudson1602201559031044079.sh: line 3: cucumber: command not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

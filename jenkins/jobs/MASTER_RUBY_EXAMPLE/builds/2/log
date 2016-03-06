@@ -1,0 +1,28 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building remotely on [8mha:AAAAtx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAylEgYd/eT83ILSktQi/eKcxLLUeCMDQzM9A2M9AzNdAyM9YwsgW9fCNM3EwtDADABzTcL94QAAAA==[0mslave_2016.03.06-02.38.03-85f48106 (automation_node swarm) in workspace /opt/builds/workspace/MASTER_RUBY_EXAMPLE
+Cloning the remote Git repository
+Cloning repository https://github.com/thamilton2014/ruby-example.git
+ > git init /opt/builds/workspace/MASTER_RUBY_EXAMPLE # timeout=10
+Fetching upstream changes from https://github.com/thamilton2014/ruby-example.git
+ > git --version # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/thamilton2014/ruby-example.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/thamilton2014/ruby-example.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/thamilton2014/ruby-example.git # timeout=10
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+No valid HEAD. Skipping the resetting
+ > git clean -fdx # timeout=10
+Fetching upstream changes from https://github.com/thamilton2014/ruby-example.git
+ > git -c core.askpass=true fetch --tags --progress https://github.com/thamilton2014/ruby-example.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 380dc59022c80a4a4375a795dd02260f3a934d05 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 380dc59022c80a4a4375a795dd02260f3a934d05
+ > git rev-list 380dc59022c80a4a4375a795dd02260f3a934d05 # timeout=10
+[MASTER_RUBY_EXAMPLE] $ /bin/bash --login /tmp/hudson2196165184046322433.sh
+mesg: ttyname failed: Inappropriate ioctl for device
+/tmp/hudson2196165184046322433.sh: line 3: cucumber: command not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
