@@ -31,3 +31,29 @@ firefox_node:
         - "5900"
     links:
         - seleniumhub:hub
+elasticsearch:
+    image: docker/elasticsearch
+    command: elasticsearch -Des.network.host=0.0.0.0
+    ports:
+        - "9200:9200"
+logstash:
+    image: docker/logstash
+    command: logstash -f /etc/logstash/conf.d/logstash.conf
+    volumes:
+        - ./docker-elk/logstash/config:/etc/logstash/conf.d
+    ports:
+        - "5000:5000"
+    links:
+        - elasticsearch
+kibana:
+    image: docker/kibana
+    ports:
+        - "5601:5601"
+    links:
+        - elasticsearch
+redis:
+    image: docker/redis
+    ports:
+      - "6379:6379"
+    links:
+      - logstash

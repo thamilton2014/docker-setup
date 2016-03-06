@@ -17,16 +17,15 @@ Install the Jenkins swarm plugin
 
 Navigate back to the directory and docker-compose the rest of the containers
 
-Helpful commands
-###
+## Helpful commands
 
-# Delete all containers
+Delete all containers
 
 ```bash
 docker rm $(docker ps -a -q)
 ```
 
-# Delete all images
+Delete all images
 
 ```bash
 docker rmi $(docker images -q)
