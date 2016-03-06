@@ -1,0 +1,33 @@
+#
+# docker-compose.yml
+#
+
+jenkins_ruby:
+    image: jenkins/node-ruby
+seleniumhub:
+    image: selenium/hub
+    ports:
+        - "4444:4444"
+    environment:
+        JAVA_OPTS: -Xmx2g
+        JAVA_OPTS: -Xms1g
+browsermob:
+    image: browsermob/node
+    ports:
+        - "9000:9000"
+        - "8081-8181:8081-8181"
+    environment:
+        JAVA_OPTS: -Xmx2g
+        JAVA_OPTS: -Xms1g
+chrome_node:
+    image: selenium/node-chrome
+    ports:
+        - "5900"
+    links:
+        - seleniumhub:hub
+firefox_node:
+    image: selenium/node-firefox
+    ports:
+        - "5900"
+    links:
+        - seleniumhub:hub

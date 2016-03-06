@@ -1,0 +1,27 @@
+[submodule "docker-selenium"]
+	path = docker-selenium
+	url = https://github.com/SeleniumHQ/docker-selenium.git
+[submodule "redis"]
+	path = redis
+	url = https://github.com/docker-library/redis.git
+[submodule "kibana"]
+	path = kibana
+	url = https://github.com/docker-library/kibana.git
+[submodule "elasticsearch"]
+	path = elasticsearch
+	url = https://github.com/docker-library/elasticsearch.git
+[submodule "logstash"]
+	path = logstash
+	url = https://github.com/docker-library/logstash.git
+[submodule "docker-browsermob"]
+	path = docker-browsermob
+	url = https://github.com/thamilton2014/docker-browsermob.git
+[submodule "docker-jenkins-ruby"]
+	path = docker-jenkins-ruby
+	url = https://github.com/thamilton2014/docker-jenkins-ruby.git
+[submodule "docker"]
+	path = docker
+	url = https://github.com/jenkinsci/docker.git
+[submodule "docker-jenkins"]
+	path = docker-jenkins
+	url = https://github.com/jenkinsci/docker.git
