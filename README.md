@@ -1,28 +1,74 @@
 Docker infrastructure for automation
 ===
 
-Jenkins
-###
+### Building the images
 
-Start by creating a Jenkins instance
+Browsermob
 
 ```bash
-cd docker-jenkins
-docker-compose up -d
+docker build -t docker/browsermob docker-browsermob/
 ```
 
-Install the Jenkins swarm plugin
+Jenkins
 
-	- Self-Organizing Swarm Plug-in Modules
+```bash
+docker build -t docker/jenkins docker-jenkins/
+```
 
-Navigate back to the directory and docker-compose the rest of the containers
+Jenkins Ruby Slave
+
+```bash
+docker build -t jenkins/node-ruby docker-jenkins-ruby/
+```
+
+Selenium Chrome Node
+
+```bash
+docker build -t selenium/node-chrome docker-selenium/NodeChrome/
+```
+
+Selenium Firefox Node
+
+```bash
+docker build -t selenium/node-firefox docker-selenium/NodeFirefox
+```
+
+Elasticsearch
+
+```bash
+docker build -t docker/elasticsearch elasticsearch/$version/
+```
+
+Kibana
+
+```bash
+docker build -t docker/kibana kibana/$version
+```
+
+Logstash
+
+```bash
+docker build -t docker/logstash logstash/$version
+```
+
+Redis
+
+```bash
+docker build -t docker/redis redis/3.0/
+```
 
 ## Helpful commands
+
+Update all submodules
+
+```bash
+git submodule foreach --recursive git pull origin master
+```
 
 Delete all containers
 
 ```bash
-docker rm $(docker ps -a -q)
+docker rm -f $(docker ps -a -q)
 ```
 
 Delete all images
