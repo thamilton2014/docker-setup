@@ -1,0 +1,46 @@
+{
+  "mappings": {
+    "cucumber": {
+      "properties": {
+        "keyword": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "keyword": {
+          "type": "string"
+        },
+        "result": {
+          "type": "string"
+        },
+        "duration": {
+          "type": "integer"
+        },
+        "browser": {
+          "type": "string"
+        },
+        "os": {
+          "type": "string"
+        },
+        "tags": {
+          "properties": {
+            "name": {"type": "string"}
+          }
+        },
+        "steps": {
+          "properties": {
+            "keyword": {"type": "string"},
+            "name": {"type": "string"},
+            "result": {"type": "string"},
+            "duration": {"type": "integer"}
+          }
+        }
+      }
+    }
+  },
+  "settings": {
+    "index.refresh_interval": "5s"
+  },
+  "template": "cucumber-*"
+}

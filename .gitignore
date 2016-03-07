@@ -1,0 +1,16 @@
+jenkins/war/
+jenkins/plugins
+jenkins/.java
+jenkins/download*
+jenkins/userContent
+jenkins/updates
+jenkins/secrets
+jenkins/secret*
+jenkins/queue
+jenkins/init*
+jenkins/logs
+jenkins/hudson*
+jenkins/copy*
+jenkins/identity*
+jenkins/nodeMonitors*
+jenkins/queue*
